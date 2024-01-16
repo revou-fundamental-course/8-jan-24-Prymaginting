@@ -1,0 +1,53 @@
+.container {
+    width: 800px;
+    margin: auto;
+    background-color: lightcyan;
+}
+.header {
+    text-align: center;
+    text-shadow: 2px 3px 2px rgba(255, 0, 0, 0.8);
+}
+.content {
+    text-align: center;
+}
+
+.navigation a{
+    height: 35px;
+    text-align: center;
+    margin: auto;
+    display: inline-flexbox;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-decoration: none;
+    color: blue;
+}
+.navigation#p-panjang {
+    margin-top: 10px;
+    
+}
+.navigation a:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+.gambar {
+    margin: 0 auto;
+    background-color: white;
+}
+.content h2 {
+    background-color: lightgray;
+    height: 30px;
+    margin: 10px auto;
+}
+#rumusPersegi {
+    text-align: center;
+}
+.luasPersegi h1 {
+    text-align: center;
+}
+.luasPersegi input {
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
