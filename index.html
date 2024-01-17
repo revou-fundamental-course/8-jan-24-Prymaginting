@@ -26,24 +26,35 @@
                 <div class="navigation" id="p-panjang">   
                     <a href="">P. Panjang</a>
                 </div>
-                <h2>Luas Persegi</h2>
+                <h2>Luas & Keliling Persegi</h2>
                 <div class="gambar">
                     <img src="asset/Persegi.png" alt="Persegi">
                 </div>
             </div>
-            <div class="luasPersegi">
-                <p>Rumus Luas Persegi :</p>
-                <p id="rumusLuas">L = S * S</p>
-                <p>Dimana :</p>
-                <p>L = Luas</p>
-                <p>S = Sisi</p>
+            <div class="Persegi">
+                <div id="coloum">
+                    <p>Rumus Luas Persegi :</p>
+                    <p id="rumusLuas">L = S * S</p>
+                    <p>Dimana :</p>
+                    <p>L = Luas</p>
+                    <p>S = Sisi</p>
+                </div>
+                <div id="coloum">
+                    <p>Rumus Keliling Persegi :</p>
+                    <p id="rumusKel">K = 4 * S</p>
+                    <p>Dimana :</p>
+                    <p>K = Keliling</p>
+                    <p>S = Sisi</p>
+                </div>
                 <hr>
-                <h1>Hitung Luas Persegi</h1>
-                <label for="sisi">Sisi </label>: <input type="text" id="txtSisi" name="txtSisi"/><br/>
-                <div id="satu"></div>
-                <div type="text" readonly="true" id="txtLuas" name="txtLuas"></div>
-                <input type="button" id="btnHitung" value="Hitung Luas" onclick="hitungLuas();">&nbsp;
-                <input type="button" id="btnReset" value="Reset" onclick="resetForm();"><br/>
+                <h1>Hitung Luas & Keliling Persegi</h1>
+                <label for="sideLength">Panjang Sisi:</label>
+                <input type="number" id="sideLength">
+                <br>
+                <p id="result"></p>
+                <button id="btnHitungLuas" onclick="hitungDanTampilkan('luas')">Hitung Luas</button>
+                <button id="btnHitungKel" onclick="hitungDanTampilkan('keliling')">Hitung Keliling</button>
+                <button id="btnReset" onclick="resetForm()">Reset</button>
             </div>
         </div>
         <div class="row">

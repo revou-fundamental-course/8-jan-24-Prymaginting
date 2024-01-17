@@ -36,25 +36,26 @@
 }
 .content h2 {
     background-color: lightgray;
-    height: 30px;
+    height: 50px;
     margin: 10px auto;
 }
 #rumusLuas , #rumusKel{
     text-align: center;
 }
-.luasPersegi h1 {
+.Persegi h1 {
     text-align: center;
 }
-.luasPersegi input {
-    width: 800px;
+
+.Persegi input {
+    
     margin: auto;
     text-align: center;
 }
-.luasPersegi #btnHitung , #btnReset {
+.Persegi  #btnHitungLuas , #btnReset , #btnHitungKel{
     display: inline-block;
     background: #4285F4;
     color: #fff;
-    width: 100px;
+    width: 120px;
     height: 30px;
     margin-left: 50%;
     border-radius: 5px;
@@ -67,11 +68,11 @@
     margin: 2rem 0;
 }
 
-.luasPersegi #hitung {
+.Persegi #hitung {
     margin-left: 50%;
 }
 
-.luasPersegi #reset {
+.Persegi #reset {
     margin-left: 80%;
 }
 

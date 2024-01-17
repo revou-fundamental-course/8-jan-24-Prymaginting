@@ -1,24 +1,22 @@
-var tampil = document.getElementById("satu");
+function hitungDanTampilkan(tipe) {
+    var sideLength = parseFloat(document.getElementById("sideLength").value);
+    var hasil = 0;
+    var rumus = "";
 
-
-function hitungLuas(){
-    sisi = document.getElementById("txtSisi").value;
-    if (sisi == ""){
-        alert("Sisi Harus diisi !");
-        return;
+    if (tipe === 'luas') {
+        hasil = sideLength * sideLength;
+        rumus = "Rumus: L = S * S";
+    } else if (tipe === 'keliling') {
+        hasil = 4 * sideLength;
+        rumus = "Rumus: K = 4 * S";
     }
-    if (isNaN(sisi)){
-        alert("Sisi Harus diisi dengan angka !");
-        return;
-    }
 
-    Luas = sisi * sisi;
+    var output = rumus + "<br>" + rumus.replace(/S/g, sideLength) + "<br>Hasil: " + hasil;
 
-
-    document.getElementById("txtLuas").innerHTML =  "L = " + Luas;
-
+    document.getElementById("result").innerHTML = output;
 }
-function resetForm(){
-    document.getElementById("txtSisi").value="";
-    document.getElementById("txtLuas").value="";
+
+function resetForm() {
+    document.getElementById("sideLength").value = "";
+    document.getElementById("result").innerHTML = "";
 }
